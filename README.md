@@ -1,56 +1,153 @@
-Análisis del problema 
+# 🏋️ Sistema de Gestión GymFit Center
 
- 
+Sistema desarrollado aplicando los principios de **Programación Orientada a Objetos (POO)** para optimizar la gestión administrativa de un gimnasio.
 
-1.1 Generalidades de la Empresa 
+---
 
-Nombre de la empresa: GymFit Center (empresa ficticia) 
+## 📋 Análisis del problema
 
-Giro de negocio: 
-Prestación de servicios de acondicionamiento físico, entrenamiento personalizado y asesoramiento en salud y bienestar para personas de diferentes edades. 
+### 🏢 1.1 Generalidades de la Empresa
 
-Misión: 
-Brindar servicios de entrenamiento físico de calidad, promoviendo la salud, el bienestar y el desarrollo físico de nuestros clientes mediante atención personalizada y un ambiente seguro y motivador. 
+**Nombre de la empresa:** GymFit Center  
+*Empresa ficticia desarrollada con fines académicos.*
 
-Visión: 
-Ser reconocido como uno de los gimnasios líderes de la localidad, destacando por la calidad de sus servicios, la satisfacción de sus clientes y el uso de tecnología para optimizar la gestión y la toma de decisiones. 
+### 💼 Giro del negocio
 
-Estructura Organizacional (Organigrama de Alto Nivel): 
+Prestación de servicios de acondicionamiento físico, entrenamiento personalizado y asesoramiento en salud y bienestar para personas de diferentes edades.
 
-Gerente Operativo 
+### 🎯 Misión
 
-Secretaria Turno Mañana 
+Brindar servicios de entrenamiento físico de calidad, promoviendo la salud, el bienestar y el desarrollo físico de nuestros clientes mediante atención personalizada y un ambiente seguro y motivador.
 
-Secretaria Turno Tarde 
+### 👁️ Visión
 
-Profesores de Gimnasio (3) 
+Ser reconocidos como uno de los gimnasios líderes de la localidad, destacando por la calidad de sus servicios, la satisfacción de sus clientes y el uso de tecnología para optimizar la gestión y la toma de decisiones.
 
-Personal de Limpieza (1) 
+---
 
- 
+## 👥 Estructura Organizacional
 
- 
+La empresa cuenta con la siguiente estructura:
 
- 
+- 👨‍💼 Gerente Operativo
+- 👩‍💻 Secretaria Turno Mañana
+- 👩‍💻 Secretaria Turno Tarde
+- 🏋️ Profesores de Gimnasio (3)
+- 🧹 Personal de Limpieza (1)
 
-1.2 Descripción del Problema 
+---
 
-Actualmente el gimnasio realiza la mayor parte de sus procesos administrativos de manera manual mediante hojas de cálculo, cuadernos de registro y anotaciones individuales. 
+## 🔍 1.2 Descripción del Problema
 
-La información de clientes, pagos, asistencia, membresías y rendimiento del negocio se encuentra dispersa en diferentes archivos, dificultando el acceso rápido y confiable a los datos. 
+Actualmente, el gimnasio realiza la mayor parte de sus procesos administrativos de manera manual mediante hojas de cálculo, cuadernos de registro y anotaciones individuales.
 
-Los principales problemas identificados son: 
+Esta forma de trabajo dificulta el control de clientes, membresías, pagos y asistencias.
 
-Dificultad para controlar el vencimiento de membresías. 
+---
 
-Riesgo de pérdida o duplicación de información. 
+## 🧠 Marco Conceptual del Sistema
 
-Demora en la elaboración de reportes administrativos. 
+El sistema ha sido desarrollado aplicando los principios fundamentales de la **Programación Orientada a Objetos (POO)**.
 
-Escasa disponibilidad de indicadores para la toma de decisiones. 
+### 🔒 Encapsulamiento
 
-Dificultad para analizar tendencias de crecimiento o disminución de clientes. 
+Los atributos de las clases se encuentran protegidos mediante atributos privados y métodos `get` y `set`.
 
-Falta de control estadístico sobre ingresos mensuales. 
+### 🧬 Herencia
 
-Dependencia excesiva del conocimiento de las secretarias para acceder a la información. 
+El sistema utiliza herencia para reutilizar atributos y comportamientos.
+
+Ejemplo:
+
+`Persona` → `Socio`
+
+`Persona` → `Entrenador`
+
+`Socio` → `SocioVIP`
+
+### 🔄 Polimorfismo
+
+Las clases de membresía utilizan métodos comunes que presentan comportamientos según el tipo de membresía.
+
+---
+
+## 🧩 Clases principales del sistema
+
+- `Persona`
+- `Socio`
+- `SocioVIP`
+- `Entrenador`
+- `Membresia`
+- `MembresiaBasica`
+- `MembresiaTrimestral`
+- `MembresiaAnual`
+- `Pago`
+- `RegistroAsistencia`
+- `GymManager`
+
+---
+
+## ⚙️ Funcionalidades del Sistema
+
+### 👥 Gestión de Clientes
+
+- Registrar clientes.
+- Modificar información.
+- Consultar historial de membresías.
+- Buscar clientes.
+- Identificar clientes morosos.
+
+### 💳 Gestión de Membresías
+
+- Consultar membresías vigentes.
+- Generar alertas de vencimiento.
+- Renovar membresías.
+
+### 💰 Gestión de Pagos
+
+- Registrar pagos.
+- Generar comprobantes.
+- Consultar historial de pagos.
+
+### 📅 Control de Asistencia
+
+- Registrar asistencia.
+- Consultar asistencias diarias.
+- Analizar frecuencia de asistencia.
+- Identificar clientes inactivos.
+
+### 📊 Reportes e Indicadores
+
+- Clientes activos e inactivos.
+- Ingresos mensuales.
+- Renovaciones.
+- Vencimientos próximos.
+- Tendencia de crecimiento.
+- Ranking de planes.
+
+---
+
+## 💻 Tecnologías utilizadas
+
+- 🐍 Python
+- 🧠 Programación Orientada a Objetos
+- 🌿 Git
+- 🐙 GitHub
+
+---
+
+## 👨‍💻 Equipo de Desarrollo
+
+| Integrante | Rol |
+|---|---|
+| Luan | Estructura POO y membresías |
+| Karen | Gestión de clientes y herencia |
+| Miguel | Pagos y asistencia |
+| Brigham | Control, reportes e interfaz |
+
+---
+
+## 🎓 Proyecto Académico
+
+**Curso:** Fundamentos de Programación 2  
+**Proyecto:** Sistema de Gestión GymFit Center
